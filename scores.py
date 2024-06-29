@@ -16,7 +16,7 @@ st.title('My Academic Progress')
 # st.write('Reference: https://docs.streamlit.io/en/stable/api.html#display-data')
 # st.balloons()
 
-df = pd.read_excel("C:/Users/weiji/My Drive/MTECH EBAC/Y2S1 - Big Data Analytics/Big Data Implementation/dssi-streamlit-main/dssi-streamlit-main/scores.xlsx")
+df = pd.read_excel("scores.xlsx")
 df_filter = df.dropna()
 df_filter['Date_combined'] = df_filter['Year'].astype('int').astype("str") + "-" + df_filter['Q'].astype("str")
 fig, ax = plt.subplots(figsize=(6, 3))
